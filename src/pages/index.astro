@@ -122,6 +122,38 @@
 			</div>
 		</section>
 
+		<section class="coming-soon animate-on-scroll">
+			<h2>Coming Soon</h2>
+			<p class="coming-soon-subtitle">We're working on more ways to enjoy Scribb</p>
+			<div class="coming-soon-grid">
+				<div class="coming-soon-item">
+					<div class="coming-soon-icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<rect x="2" y="3" width="20" height="14" rx="2"/>
+							<path d="M2 17h20"/>
+							<path d="M6 21h12"/>
+							<path d="M9 17v4"/>
+							<path d="M15 17v4"/>
+						</svg>
+					</div>
+					<h3>macOS App</h3>
+					<p>A native Mac experience with menubar quick-save, keyboard shortcuts, and seamless sync.</p>
+				</div>
+				<div class="coming-soon-item">
+					<div class="coming-soon-icon">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+							<rect x="3" y="3" width="7" height="7" rx="1"/>
+							<rect x="14" y="3" width="7" height="7" rx="1"/>
+							<rect x="3" y="14" width="7" height="7" rx="1"/>
+							<rect x="14" y="14" width="7" height="7" rx="1"/>
+						</svg>
+					</div>
+					<h3>iOS Widgets</h3>
+					<p>Quick access to your reading list right from your Home Screen on iPhone and iPad.</p>
+				</div>
+			</div>
+		</section>
+
 		<footer>
 			<a href="https://testflight.apple.com/join/MDpdnmvQ" class="cta" target="_blank" rel="noopener">
 				<svg class="apple-icon" viewBox="0 0 384 512" fill="currentColor">
@@ -419,6 +451,68 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: top;
+	}
+
+	/* Coming Soon Section */
+	.coming-soon {
+		padding: 6rem 2rem;
+		text-align: center;
+		background: #111;
+	}
+
+	.coming-soon h2 {
+		margin-bottom: 0.75rem;
+	}
+
+	.coming-soon-subtitle {
+		color: #606060;
+		font-size: 1.1rem;
+		margin-bottom: 3rem;
+	}
+
+	.coming-soon-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+	.coming-soon-item {
+		background: rgba(255, 255, 255, 0.03);
+		border: 1px solid rgba(255, 255, 255, 0.06);
+		border-radius: 16px;
+		padding: 2rem;
+		transition: background 0.3s, border-color 0.3s;
+	}
+
+	.coming-soon-item:hover {
+		background: rgba(255, 255, 255, 0.05);
+		border-color: rgba(255, 255, 255, 0.1);
+	}
+
+	.coming-soon-icon {
+		width: 3rem;
+		height: 3rem;
+		margin: 0 auto 1.25rem;
+		color: #8b5cf6;
+	}
+
+	.coming-soon-icon svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.coming-soon-item h3 {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 0.75rem;
+	}
+
+	.coming-soon-item p {
+		color: #707070;
+		line-height: 1.6;
+		font-size: 0.95rem;
 	}
 
 	/* Footer */
