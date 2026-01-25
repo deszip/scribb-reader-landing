@@ -15,16 +15,13 @@
 		<section class="hero">
 			<div class="hero-bg"></div>
 			<div class="hero-content">
-				<h1>Scribb <span class="beta-badge">Beta</span></h1>
+				<h1>Scribb</h1>
 			<p class="tagline">Read without distractions.</p>
 			<p class="description">
 				Save articles from the web and enjoy them in a clean, focused reading experience.
 			</p>
-			<a href="https://testflight.apple.com/join/MDpdnmvQ" class="cta" target="_blank" rel="noopener">
-				<svg class="apple-icon" viewBox="0 0 384 512" fill="currentColor">
-					<path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-				</svg>
-				Get Beta
+			<a href="https://apps.apple.com/app/scribb" class="cta-appstore" target="_blank" rel="noopener">
+				<img src="/appstore/Download_on_the_App_Store_Badge_Light.svg" alt="Download on the App Store" class="appstore-badge" />
 			</a>
 			</div>
 		</section>
@@ -155,11 +152,8 @@
 		</section>
 
 		<footer>
-			<a href="https://testflight.apple.com/join/MDpdnmvQ" class="cta" target="_blank" rel="noopener">
-				<svg class="apple-icon" viewBox="0 0 384 512" fill="currentColor">
-					<path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
-				</svg>
-				Get Beta
+			<a href="https://apps.apple.com/app/scribb" class="cta-appstore" target="_blank" rel="noopener">
+				<img src="/appstore/Download_on_the_App_Store_Badge_Light.svg" alt="Download on the App Store" class="appstore-badge" />
 			</a>
 			<div class="footer-links">
 				<a href="https://twitter.com/deszip" class="footer-link" target="_blank" rel="noopener">
@@ -178,6 +172,11 @@
 						<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
 					</svg>
 				</a>
+			</div>
+			<div class="legal-links">
+				<a href="/privacy">Privacy Policy</a>
+				<span class="separator">|</span>
+				<a href="/eula">EULA</a>
 			</div>
 			<p class="copyright">Scribb</p>
 		</footer>
@@ -253,20 +252,6 @@
 		margin-bottom: 1rem;
 	}
 
-	.beta-badge {
-		display: inline-block;
-		font-size: 0.3em;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		padding: 0.35em 0.7em;
-		background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-		color: #fff;
-		border-radius: 6px;
-		vertical-align: super;
-		margin-left: 0.2em;
-	}
-
 	h2 {
 		font-size: clamp(1.5rem, 4vw, 2.25rem);
 		font-weight: 600;
@@ -288,28 +273,19 @@
 		max-width: 500px;
 	}
 
-	.cta {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.75rem;
-		background: #fafafa;
-		color: #0a0a0a;
-		text-decoration: none;
-		padding: 1rem 1.75rem;
-		border-radius: 12px;
-		font-size: 1rem;
-		font-weight: 600;
+	.cta-appstore {
+		display: inline-block;
 		transition: transform 0.2s, opacity 0.2s;
 	}
 
-	.cta:hover {
+	.cta-appstore:hover {
 		transform: scale(1.02);
 		opacity: 0.9;
 	}
 
-	.apple-icon {
-		width: 1.25rem;
-		height: 1.25rem;
+	.appstore-badge {
+		height: 50px;
+		width: auto;
 	}
 
 	/* Feature Blocks */
@@ -551,8 +527,31 @@
 		height: 1.25rem;
 	}
 
-	.copyright {
+	.legal-links {
 		margin-top: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.legal-links a {
+		color: #606060;
+		text-decoration: none;
+		font-size: 0.875rem;
+		transition: color 0.2s;
+	}
+
+	.legal-links a:hover {
+		color: #fafafa;
+	}
+
+	.legal-links .separator {
+		color: #404040;
+	}
+
+	.copyright {
+		margin-top: 1rem;
 		color: #404040;
 		font-size: 0.875rem;
 	}
@@ -706,7 +705,7 @@
 		animation: fadeInUp 0.8s ease-out 0.3s both;
 	}
 
-	.hero-content .cta {
+	.hero-content .cta-appstore {
 		animation: fadeInUp 0.8s ease-out 0.4s both;
 	}
 
@@ -732,7 +731,7 @@
 		.hero-content h1,
 		.hero-content .tagline,
 		.hero-content .description,
-		.hero-content .cta {
+		.hero-content .cta-appstore {
 			animation: none;
 			opacity: 1;
 			transform: none;
