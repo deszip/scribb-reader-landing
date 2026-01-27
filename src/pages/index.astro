@@ -291,11 +291,11 @@
 	/* Feature Blocks */
 	.feature-block {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1.2fr;
 		gap: 4rem;
 		align-items: center;
 		padding: 6rem 2rem;
-		max-width: 1100px;
+		max-width: 1300px;
 		margin: 0 auto;
 	}
 
@@ -357,7 +357,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
-		min-height: 400px;
+		min-height: 580px;
 	}
 
 	.device-ipad,
@@ -366,15 +366,15 @@
 	}
 
 	.device-ipad {
-		width: 280px;
+		width: 400px;
 		z-index: 1;
-		transform: translateX(40px);
+		transform: translateX(50px);
 	}
 
 	.device-iphone {
-		width: 160px;
+		width: 220px;
 		z-index: 2;
-		transform: translateX(-40px);
+		transform: translateX(-50px);
 		filter: drop-shadow(-20px 20px 40px rgba(0, 0, 0, 0.4));
 	}
 
@@ -557,6 +557,27 @@
 	}
 
 	/* Responsive */
+	@media (max-width: 1100px) {
+		.feature-block {
+			max-width: 100%;
+			gap: 2rem;
+		}
+
+		.device-ipad {
+			width: 340px;
+			transform: translateX(40px);
+		}
+
+		.device-iphone {
+			width: 190px;
+			transform: translateX(-40px);
+		}
+
+		.feature-devices {
+			min-height: 500px;
+		}
+	}
+
 	@media (max-width: 900px) {
 		.feature-block {
 			grid-template-columns: 1fr;
@@ -582,16 +603,32 @@
 
 		.feature-devices {
 			order: -1;
-			min-height: 320px;
+			min-height: 420px;
 		}
 
 		.device-ipad {
-			width: 220px;
+			width: 300px;
+			transform: translateX(35px);
+		}
+
+		.device-iphone {
+			width: 170px;
+			transform: translateX(-35px);
+		}
+	}
+
+	@media (max-width: 600px) {
+		.feature-devices {
+			min-height: 340px;
+		}
+
+		.device-ipad {
+			width: 240px;
 			transform: translateX(30px);
 		}
 
 		.device-iphone {
-			width: 130px;
+			width: 140px;
 			transform: translateX(-30px);
 		}
 	}
@@ -602,16 +639,16 @@
 		}
 
 		.feature-devices {
-			min-height: 260px;
+			min-height: 280px;
 		}
 
 		.device-ipad {
-			width: 180px;
+			width: 200px;
 			transform: translateX(25px);
 		}
 
 		.device-iphone {
-			width: 110px;
+			width: 120px;
 			transform: translateX(-25px);
 		}
 
@@ -668,24 +705,24 @@
 
 	.animate-on-scroll .device-ipad {
 		opacity: 0;
-		transform: translateY(30px) translateX(40px);
+		transform: translateY(30px) translateX(50px);
 		transition: opacity 0.6s ease-out 0.4s, transform 0.6s ease-out 0.4s;
 	}
 
 	.animate-on-scroll.is-visible .device-ipad {
 		opacity: 1;
-		transform: translateY(0) translateX(40px);
+		transform: translateY(0) translateX(50px);
 	}
 
 	.animate-on-scroll .device-iphone {
 		opacity: 0;
-		transform: translateY(50px) translateX(-40px);
+		transform: translateY(50px) translateX(-50px);
 		transition: opacity 0.6s ease-out 0.5s, transform 0.6s ease-out 0.5s;
 	}
 
 	.animate-on-scroll.is-visible .device-iphone {
 		opacity: 1;
-		transform: translateY(0) translateX(-40px);
+		transform: translateY(0) translateX(-50px);
 	}
 
 	/* Hero animations */
@@ -739,11 +776,11 @@
 		}
 
 		.animate-on-scroll.is-visible .device-ipad {
-			transform: translateX(40px);
+			transform: translateX(50px);
 		}
 
 		.animate-on-scroll.is-visible .device-iphone {
-			transform: translateX(-40px);
+			transform: translateX(-50px);
 		}
 	}
 </style>
